@@ -1,0 +1,562 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #202938;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    overflow: hidden;
+}
+
+
+/* =========================
+   MENÚ FLOTANTE
+========================= */
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92%, 1050px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 20px;
+
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(31, 41, 55, 0.12);
+
+    z-index: 1000;
+}
+
+.logo h2 {
+    color: #2563eb;
+    font-size: 21px;
+    letter-spacing: -0.5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu a {
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 9px 13px;
+    border-radius: 10px;
+
+    transition: 0.25s ease;
+}
+
+.menu a:hover {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio {
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 150px 8% 90px;
+
+    background:
+        radial-gradient(circle at 85% 25%, #dbeafe 0, transparent 25%),
+        radial-gradient(circle at 15% 80%, #ede9fe 0, transparent 22%),
+        #f8fafc;
+}
+
+.inicio-contenido {
+    max-width: 780px;
+}
+
+.texto-pequeno {
+    display: inline-block;
+
+    margin-bottom: 18px;
+    padding: 7px 13px;
+
+    background: #e0edff;
+    color: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.inicio h1 {
+    max-width: 750px;
+
+    color: #172033;
+
+    font-size: clamp(45px, 7vw, 78px);
+    line-height: 1.02;
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+.inicio h1 span {
+    display: block;
+    color: #2563eb;
+}
+
+.inicio-contenido > p:not(.texto-pequeno) {
+    max-width: 600px;
+
+    color: #5b6472;
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.22);
+
+    transition: 0.25s ease;
+}
+
+.boton:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    padding: 95px 8%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.titulo-seccion {
+    margin-bottom: 45px;
+}
+
+.titulo-seccion p {
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+.titulo-seccion h2 {
+    font-size: 38px;
+    color: #172033;
+    letter-spacing: -1px;
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros-contenido {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 55px;
+
+    align-items: stretch;
+}
+
+.nosotros-contenido h3 {
+    color: #172033;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.nosotros-contenido p {
+    color: #606b7a;
+    margin-bottom: 18px;
+    max-width: 650px;
+}
+
+.nosotros-caja {
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(31, 41, 55, 0.06);
+
+    border-left: 5px solid #2563eb;
+}
+
+.nosotros-caja h3 {
+    color: #2563eb;
+}
+
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.servicios {
+    max-width: none;
+    background: white;
+}
+
+.servicios .titulo-seccion,
+.servicios .tarjetas {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.tarjeta {
+    padding: 30px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    transition: 0.25s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    border-color: #bfdbfe;
+
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.10);
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e0edff;
+    border-radius: 12px;
+
+    font-size: 24px;
+
+    margin-bottom: 22px;
+}
+
+.tarjeta h3 {
+    color: #172033;
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #697386;
+    font-size: 15px;
+}
+
+
+/* =========================
+   PORTAFOLIO
+========================= */
+
+.portafolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.proyecto {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: 0.25s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 14px 30px rgba(31, 41, 55, 0.10);
+}
+
+.proyecto-imagen {
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e8f0ff;
+
+    color: #2563eb;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.proyecto:nth-child(2) .proyecto-imagen {
+    background: #eeeaff;
+    color: #7c3aed;
+}
+
+.proyecto:nth-child(3) .proyecto-imagen {
+    background: #e5f7f0;
+    color: #059669;
+}
+
+.proyecto-info {
+    padding: 23px;
+}
+
+.proyecto-info h3 {
+    color: #172033;
+    margin-bottom: 7px;
+}
+
+.proyecto-info p {
+    color: #697386;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    text-align: center;
+
+    max-width: none;
+
+    background: #eef5ff;
+}
+
+.contacto .titulo-seccion {
+    margin-bottom: 20px;
+}
+
+.contacto > p {
+    max-width: 550px;
+    margin: 0 auto 25px;
+
+    color: #5f6b7a;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #172033;
+    color: white;
+
+    padding: 55px 8% 0;
+}
+
+.footer-contenido {
+    max-width: 1080px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+
+    padding-bottom: 45px;
+}
+
+.footer h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #aeb8c7;
+    font-size: 14px;
+}
+
+.footer-contenido > div:first-child p {
+    max-width: 300px;
+}
+
+.footer-contenido a {
+    display: block;
+
+    color: #aeb8c7;
+    font-size: 14px;
+
+    margin-bottom: 8px;
+
+    transition: 0.2s;
+}
+
+.footer-contenido a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    max-width: 1080px;
+    margin: auto;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #303b4e;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .header {
+        width: 94%;
+    }
+
+    .menu {
+        gap: 0;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .inicio {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .seccion {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .nosotros-contenido {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .tarjetas,
+    .portafolio {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        top: 10px;
+        padding: 10px 13px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .menu a {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .inicio {
+        min-height: 650px;
+        padding-top: 140px;
+    }
+
+    .inicio h1 {
+        font-size: 45px;
+        letter-spacing: -2px;
+    }
+
+    .inicio-contenido > p:not(.texto-pequeno) {
+        font-size: 16px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 30px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

@@ -59,6 +59,17 @@ main {
     font-size: 21px;
     letter-spacing: -0.5px;
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+}
 
 .menu {
     display: flex;

@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Proyectos</title>
-
+    <meta name="description" content="Tech Students: proyectos, servicios y experiencias de estudiantes de informática del Instituto Politécnico Industrial Don Bosco.">
+    <title> Proyectos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- MENÚ -->
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
     <header class="header">
+        <a href="#inicio" class="logo" aria-label="Tech Students, ir al inicio">
+            <img src="imagenes/logodonbosco.jpg"
+                 alt="Logo del Instituto Politécnico Industrial Don Bosco">
+            <span>Bosco <strong>innova</strong></span>
+        </a>
 
-        <div class="logo">
-            <img src="imagenes/logodonbosco.jpg" alt="Tech Students">
-        </div>
-
-        <nav class="menu">
+        <nav class="menu" aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#servicios">Servicios</a>
@@ -27,339 +27,389 @@
             <a href="#ubicacion">Ubicación</a>
             <a href="#contacto">Contacto</a>
         </nav>
-
     </header>
 
     <main>
 
         <!-- INICIO -->
         <section id="inicio" class="inicio">
-
             <div class="inicio-contenido">
-
-                
+                <span class="etiqueta-inicio">INNOVACIÓN · CREATIVIDAD · TECNOLOGÍA</span>
 
                 <h1>
-                   Creando nuestro futuro 
-                    <span>tecnológico</span>
+                    Creando nuestro futuro
+                    <span>tecnológico.</span>
                 </h1>
 
                 <p>
                     Somos estudiantes apasionados por la tecnología,
                     el desarrollo web y la creación de soluciones digitales.
+                    Aprendemos hoy para construir el mañana.
                 </p>
 
-                <a href="#nosotros" class="boton">
-                    Conócenos
-                </a>
-
+                <div class="inicio-botones">
+                    <a href="#nosotros" class="boton">Conócenos</a>
+                    <a href="#portafolio" class="boton boton-secundario">
+                        Ver portafolio
+                    </a>
+                </div>
             </div>
 
+            <a href="#nosotros" class="indicador-scroll">
+                Descubre nuestro trabajo <span aria-hidden="true">↓</span>
+            </a>
         </section>
 
         <!-- NOSOTROS -->
         <section id="nosotros" class="seccion">
-
             <div class="titulo-seccion">
-                <p>CONÓCENOS</p>
-                <h2>Sobre Nosotros</h2>
+                <p class="subtitulo">CONÓCENOS</p>
+                <h2>Sobre nosotros</h2>
+                <p class="introduccion">
+                    Conoce quiénes somos, qué nos motiva y cómo trabajamos
+                    para desarrollar nuestras habilidades tecnológicas.
+                </p>
             </div>
 
             <div class="nosotros-contenido">
-
-                <div>
-                    <h3>¿Quiénes somos?</h3>
+                <article class="nosotros-texto">
+                    <span class="numero-seccion">01 / NUESTRA IDENTIDAD</span>
+                    <h3>Aprendemos creando.</h3>
 
                     <p>
-                        Somos un grupo de estudiantes que desarrolla
-                        proyectos relacionados con la informática y
-                        el desarrollo web.
+                        Somos un grupo de estudiantes que desarrolla proyectos
+                        relacionados con la informática y el desarrollo web.
                     </p>
 
                     <p>
                         Nuestro objetivo es aplicar nuestros conocimientos
-                        para crear proyectos útiles, modernos y funcionales.
+                        para crear proyectos útiles, modernos y funcionales,
+                        trabajando en equipo y aportando soluciones tecnológicas.
                     </p>
-                </div>
 
-                <div class="nosotros-caja">
+                    <a href="#servicios" class="enlace-texto">
+                        Conoce nuestros servicios <span aria-hidden="true">→</span>
+                    </a>
+                </article>
 
+                <article class="nosotros-caja">
+                    <div class="mision-icono" aria-hidden="true">✦</div>
+                    <p class="mision-etiqueta">NUESTRO PROPÓSITO</p>
                     <h3>Nuestra misión</h3>
 
                     <p>
                         Aprender, crear e innovar utilizando la tecnología.
+                        Aplicamos nuestros conocimientos y habilidades para
+                        desarrollar proyectos informáticos de calidad,
+                        trabajar en equipo y contribuir al avance tecnológico
+                        con responsabilidad, creatividad y excelencia.
                     </p>
 
-                </div>
-
+                    <div class="mision-linea"></div>
+                </article>
             </div>
-
         </section>
 
         <!-- SERVICIOS -->
         <section id="servicios" class="seccion servicios">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="subtitulo">LO QUE HACEMOS</p>
+                    <h2>Nuestros servicios</h2>
+                    <p class="introduccion">
+                        Creamos soluciones digitales combinando diseño,
+                        creatividad y tecnología.
+                    </p>
+                </div>
 
-            <div class="titulo-seccion">
-                <p>LO QUE HACEMOS</p>
-                <h2>Nuestros Servicios</h2>
+                <div class="tarjetas">
+
+                    <article class="tarjeta servicio-web">
+                        <div class="servicio-contenido">
+                            <span class="servicio-numero">01</span>
+                            <h3>Desarrollo web</h3>
+                            <p>
+                                Creación de páginas web modernas, funcionales
+                                y adaptables a diferentes dispositivos.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta servicio-diseno">
+                        <div class="servicio-contenido">
+                            <span class="servicio-numero">02</span>
+                            <h3>Diseño web</h3>
+                            <p>
+                                Diseño de interfaces atractivas, organizadas
+                                y fáciles de utilizar.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta servicio-digital">
+                        <div class="servicio-contenido">
+                            <span class="servicio-numero">03</span>
+                            <h3>Soluciones digitales</h3>
+                            <p>
+                                Desarrollo de propuestas tecnológicas para
+                                resolver necesidades y facilitar tareas.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-
-            <div class="tarjetas">
-
-                <article class="tarjeta">
-
-                    <div class="icono">💻</div>
-
-                    <h3>Desarrollo Web</h3>
-
-                    <p>
-                        Creación de páginas web utilizando tecnologías
-                        modernas y buenas prácticas.
-                    </p>
-
-                </article>
-
-                <article class="tarjeta">
-
-                    <div class="icono">🎨</div>
-
-                    <h3>Diseño Web</h3>
-
-                    <p>
-                        Diseño de interfaces organizadas, atractivas
-                        y fáciles de utilizar.
-                    </p>
-
-                </article>
-
-                <article class="tarjeta">
-
-                    <div class="icono">⚙️</div>
-
-                    <h3>Soluciones Digitales</h3>
-
-                    <p>
-                        Desarrollo de soluciones utilizando herramientas
-                        tecnológicas.
-                    </p>
-
-                </article>
-
-            </div>
-
         </section>
 
-        <!-- PORTAFOLIO -->
+        <!-- PORTAFOLIO Y GALERÍA -->
+         <a href="#multimedia">Multimedia</a>
         <section id="portafolio" class="seccion">
-
             <div class="titulo-seccion">
-                <p>NUESTRO TRABAJO</p>
+                <p class="subtitulo">NUESTRO TRABAJO</p>
                 <h2>Portafolio</h2>
+                <p class="introduccion">
+                    Conocenos y explora las áreas de trabajo
+                    relacionadas con nuestro proyecto académico.
+                </p>
             </div>
 
             <div class="portafolio">
 
-                <!-- EMANIS -->
                 <article class="proyecto">
-
                     <div class="proyecto-imagen">
-                        Emanis
+                        <img src="imagenes/Emanis.jpeg"
+                             alt="Fotografía de Emanis Paul"
+                             loading="lazy">
                     </div>
-
                     <div class="proyecto-info">
-
-                        <h3>Emanis</h3>
-
-                        <p>
-                            Instituto Politécnico Industrial Don Bosco
-                        </p>
-
-                        <p>
-                            emanispaul268@gmail.com
-                        </p>
-
-                        <p>
-                            6to DAAI
-                        </p>
-
-                        <p>
-                            (829) 528-7114
-                        </p>
-
+                        <span class="proyecto-categoria">INTEGRANTE</span>
+                        <h3>Emanis Paul</h3>
+                        <p>Instituto Politécnico Industrial Don Bosco</p>
+                        <p>6to DAAI</p>
+                        <a href="mailto:emanispaul268@gmail.com">
+                            Contactar por correo →
+                        </a>
                     </div>
-
                 </article>
 
-                <!-- EMILIA -->
                 <article class="proyecto">
-
                     <div class="proyecto-imagen">
-                        Emilia
+                        <img src="imagenes/Emilia.jpeg"
+                             alt="Fotografía de Emilia Rosario"
+                             loading="lazy">
                     </div>
-
                     <div class="proyecto-info">
-
-                        <h3>Emilia</h3>
-
-                        <p>
-                            Instituto Politécnico Industrial Don Bosco
-                        </p>
-
-                        <p>
-                            emiliarosariotoribio@gmail.com
-                        </p>
-
-                        <p>
-                            6to DAAI
-                        </p>
-
-                        <p>
-                            (809) 752-8303
-                        </p>
-
+                        <span class="proyecto-categoria">INTEGRANTE</span>
+                        <h3>Emilia Rosario</h3>
+                        <p>Instituto Politécnico Industrial Don Bosco</p>
+                        <p>6to DAAI</p>
+                        <a href="mailto:emiliarosariotoribio@gmail.com">
+                            Contactar por correo →
+                        </a>
                     </div>
-
                 </article>
 
-                <!-- ISMAEL -->
                 <article class="proyecto">
-
                     <div class="proyecto-imagen">
-                        Ismael
+                        <img src="imagenes/ismael.jpeg"
+                             alt="Fotografía de Ismael Valdez"
+                             loading="lazy">
                     </div>
-
                     <div class="proyecto-info">
-
-                        <h3>Ismael</h3>
-
-                        <p>
-                            Instituto Politécnico Industrial Don Bosco
-                        </p>
-
-                        <p>
-                            Ismaelvaldeznunez13@gmail.com
-                        </p>
-
-                        <p>
-                            6to DAAI
-                        </p>
-
-                        <p>
-                            (849)-3782318
-                        </p>
-
+                        <span class="proyecto-categoria">INTEGRANTE</span>
+                        <h3>Ismael Valdez</h3>
+                        <p>Instituto Politécnico Industrial Don Bosco</p>
+                        <p>6to DAAI</p>
+                        <a href="mailto:Ismaelvaldeznunez13@gmail.com">
+                            Contactar por correo →
+                        </a>
                     </div>
-
                 </article>
 
             </div>
+            
+<!-- MULTIMEDIA -->
+<section id="multimedia" class="seccion multimedia">
+    <div class="titulo-seccion">
+        <p class="subtitulo">NUESTRA EXPERIENCIA</p>
+        <h2>Conoce nuestro proyecto</h2>
+        <p class="introduccion">
+            Descubre nuestro trabajo y experiencia como estudiantes.
+        </p>
+    </div>
 
+    <div class="multimedia-contenido">
+        <div class="video-contenedor">
+            <video controls preload="metadata"
+                   poster="imagenes/grupoimg - copia (2).jpeg">
+                <source src="imagenes/prueba.mp4" type="video/mp4">
+                Tu navegador no admite la reproducción de este video.
+            </video>
+        </div>
+    </div>
+</section>
+
+            <!-- GALERÍA DE ÁREAS Y PROYECTOS -->
+            <div class="galeria-titulo">
+                <p class="subtitulo">ÁREAS ACADÉMICAS</p>
+                <h3>Explorando la tecnología</h3>
+            </div>
+
+            <div class="galeria">
+
+                <article class="galeria-item">
+                    <img src="imagenes/progra.png"
+                         alt="Imagen relacionada con programación"
+                         loading="lazy">
+                    <div class="galeria-overlay">
+                        <span>01</span>
+                        <h3>Programación</h3>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="imagenes/desing.png"
+                         alt="Imagen relacionada con diseño gráfico"
+                         loading="lazy">
+                    <div class="galeria-overlay">
+                        <span>02</span>
+                        <h3>Diseño digital</h3>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="imagenes/solu.png"
+                         alt="Imagen relacionada con soluciones digitales"
+                         loading="lazy">
+                    <div class="galeria-overlay">
+                        <span>03</span>
+                        <h3>Soluciones digitales</h3>
+                    </div>
+                </article>
+
+            </div>
         </section>
 
         <!-- UBICACIÓN -->
         <section id="ubicacion" class="seccion ubicacion">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="subtitulo">ENCUÉNTRANOS</p>
+                    <h2>Nuestra ubicación</h2>
+                    <p class="introduccion">
+                        Consulta dónde se encuentra nuestra institución.
+                    </p>
+                </div>
 
-            <div class="titulo-seccion">
+                <div class="ubicacion-caja">
+                    <div class="ubicacion-icono" aria-hidden="true">⌖</div>
+                    <h3>Instituto Politécnico Industrial Don Bosco</h3>
+                    <p>Santiago, República Dominicana</p>
 
-                <p>ENCUÉNTRANOS</p>
-
-                <h2>Ubicación</h2>
-
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Instituto+Politecnico+Industrial+Don+Bosco+Santiago+Republica+Dominicana"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="boton">
+                        Ver en Google Maps ↗
+                    </a>
+                </div>
             </div>
-
-            <div class="ubicacion-caja">
-
-                <h3>📍 Nuestra institución</h3>
-
-                <p>
-                    Visita la ubicación de nuestro Politécnico
-                    en Google Maps.
-                </p>
-
-                <a
-                    href="https://www.google.com/maps/search/?api=1&query=TU+POLITECNICO+Santiago+Republica+Dominicana"
-                    target="_blank"
-                    class="boton-mapa">
-                    Ver ubicación en Google Maps
-                </a>
-
-            </div>
-
         </section>
 
         <!-- CONTACTO -->
         <section id="contacto" class="seccion contacto">
+            <div class="contacto-contenido">
+                <div class="titulo-seccion">
+                    <p class="subtitulo">HABLEMOS</p>
+                    <h2>¿Tienes alguna pregunta?</h2>
+                    <p class="introduccion">
+                        Completa el formulario para comunicarte con nosotros.
+                    </p>
+                </div>
 
-            <div class="titulo-seccion">
+                <form class="formulario" action="#contacto" method="get">
+                    <div class="campo">
+                        <label for="nombre">Nombre completo</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            autocomplete="name"
+                            required>
+                    </div>
 
-                <p>HABLEMOS</p>
+                    <div class="campo">
+                        <label for="correo">Correo electrónico</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            autocomplete="email"
+                            required>
+                    </div>
 
-                <h2>Contacto</h2>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribe tu mensaje..."
+                            required></textarea>
+                    </div>
 
+                    <button type="submit" class="boton">
+                        Enviar mensaje →
+                    </button>
+
+                    <p class="nota-formulario">
+                        Formulario de demostración académica.
+                    </p>
+                </form>
             </div>
-
-            <p>
-                ¿Quieres conocer más sobre nuestros proyectos?
-                Puedes comunicarte con nosotros.
-            </p>
-
-            <a href="#" class="boton">
-                Contáctanos
-            </a>
-
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- PIE DE PÁGINA -->
     <footer class="footer">
-
         <div class="footer-contenido">
 
-            <div>
-
-                <h2>Tech Students</h2>
-
+            <div class="footer-marca">
+                <a href="#inicio" class="footer-logo">Tech Students<span>.</span></a>
                 <p>
                     Aprendiendo, creando e innovando con tecnología.
                 </p>
-
             </div>
 
-            <div>
-
-                <h3>Enlaces</h3>
-
+            <nav class="footer-enlaces" aria-label="Enlaces del pie de página">
+                <h3>Explora</h3>
                 <a href="#inicio">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#portafolio">Portafolio</a>
                 <a href="#ubicacion">Ubicación</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
 
-            </div>
-
-            <div>
-
-                <h3>Contacto</h3>
-
-                <p>📧 Ipidbosco@gmail.com</p>
-
-                <p>📍 Santiago, República Dominicana</p>
-
+            <div class="footer-contacto">
+                <h3>Contacto institucional</h3>
+                <a href="mailto:ipidbosco@gmail.com">
+                    ipidbosco@gmail.com
+                </a>
+                <p>Santiago, República Dominicana</p>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-
-            <p>
-                © 2026 Tech Students. Todos los derechos reservados.
-            </p>
-
+            <p>© 2026 Tech Students. Todos los derechos reservados.</p>
+            <a href="#inicio">Volver arriba ↑</a>
         </div>
-
     </footer>
 
 </body>
-
 </html>

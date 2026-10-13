@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Tech Students</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+.galeria {
+    padding: 120px 8% 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria h1 {
+    display: block;
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #e88916;
+    text-align: center;
+}
+
+.fotos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.fotos img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.fotos img:hover {
+    transform: scale(1.04);
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 25px;
+    background: #e88916;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+    .fotos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <main class="galeria">
+        <h1>Nuestra galeria</h1>
+    
+
+        <div class="fotos">
+            <img src="imagenes/curso.jpeg" alt="Proyecto 1">
+            <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
+            <img src="imagenes/proyecto3.jpg" alt="Proyecto 3">
+            <img src="imagenes/proyecto4.jpg" alt="Proyecto 4">
+            <img src="imagenes/proyecto5.jpg" alt="Proyecto 5">
+            <img src="imagenes/proyecto6.jpg" alt="Proyecto 6">
+        </div>
+
+        <a href="index.html" class="volver">Volver al inicio</a>
+    </main>
+
+</body>
+</html>

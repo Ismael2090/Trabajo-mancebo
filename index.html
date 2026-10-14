@@ -11,7 +11,6 @@
 
 <body>
 
-    <!-- ENCABEZADO Y NAVEGACIÓN -->
     <header class="header">
         <a href="#inicio" class="logo" aria-label="Tech Students, ir al inicio">
             <img src="imagenes/logodonbosco.jpg"
@@ -24,14 +23,15 @@
             <a href="#nosotros">Nosotros</a>
             <a href="#servicios">Servicios</a>
             <a href="#portafolio">Portafolio</a>
+            <a href="#calendario">Calendario</a>
             <a href="#ubicacion">Ubicación</a>
             <a href="#contacto">Contacto</a>
+            <a href="php/admin_panel.php" target="_blank" style="color: var(--naranja-oscuro);">Admin</a>
         </nav>
     </header>
 
     <main>
 
-        <!-- INICIO -->
         <section id="inicio" class="inicio">
             <div class="inicio-contenido">
                 <span class="etiqueta-inicio">INNOVACIÓN · CREATIVIDAD · TECNOLOGÍA</span>
@@ -60,7 +60,6 @@
             </a>
         </section>
 
-        <!-- NOSOTROS -->
         <section id="nosotros" class="seccion">
             <div class="titulo-seccion">
                 <p class="subtitulo">CONÓCENOS</p>
@@ -110,7 +109,6 @@
             </div>
         </section>
 
-        <!-- SERVICIOS -->
         <section id="servicios" class="seccion servicios">
             <div class="contenedor">
                 <div class="titulo-seccion">
@@ -161,7 +159,6 @@
             </div>
         </section>
 
-        <!-- PORTAFOLIO Y GALERÍA -->
          <a href="#multimedia">Multimedia</a>
         <section id="portafolio" class="seccion">
             <div class="titulo-seccion">
@@ -225,7 +222,7 @@
                         <p>Instituto Politécnico Industrial Don Bosco</p>
                         <p>6to DAAI</p>
                         <p>17 años</p>
-                       <a href="https://maps.app.goo.gl/eVvgn4vdhwSfcmLX7" style="display: block;"> Ver dirección</a>
+                       <a href="https://www.google.com/maps/place/Residencial+Leslie+Rose/@19.4177381,-70.6874243,18z/data=!3m1!4b1!4m6!3m5!1s0x8eb1cf007d384c6d:0x36aa3e5d7cd57c2!8m2!3d19.4177381!4d-70.6861368!16s%2Fg%2F11njj26v00?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D" style="display: block;"> Ver dirección</a>
 <a href="ismaelvaldeznunes@gmail.com" style="display: block;">
     Contactar por correo →
 </a>
@@ -233,8 +230,7 @@
                 </article>
 
             </div>
-            
-<!-- MULTIMEDIA -->
+
 <section id="multimedia" class="seccion multimedia">
     <div class="titulo-seccion">
         <p class="subtitulo">NUESTRA EXPERIENCIA</p>
@@ -255,7 +251,7 @@
     </div>
 </section>
 
-            <!-- GALERÍA DE ÁREAS Y PROYECTOS -->
+          
             <div class="galeria-titulo">
                 <p class="subtitulo">ÁREAS ACADÉMICAS</p>
                 <h3>Explorando la tecnología</h3>
@@ -296,7 +292,25 @@
             </div>
         </section>
 
-        <!-- UBICACIÓN -->
+<section id="calendario" class="seccion">
+    <div class="titulo-seccion">
+        <p class="subtitulo">CRONOGRAMA</p>
+        <h2>Calendario de eventos</h2>
+        <p class="introduccion">Consulta las fechas importantes y eventos académicos.</p>
+    </div>
+    <div style="max-width: 700px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <button id="mes-anterior" type="button" class="boton" style="min-height: 38px; padding: 5px 12px;">⟨ Anterior</button>
+            <h3 id="mes-anio-actual" style="font-size: 18px; color: var(--oscuro);">Mes Año</h3>
+            <button id="mes-siguiente" type="button" class="boton" style="min-height: 38px; padding: 5px 12px;">Siguiente ⟩</button>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-weight: bold; color: var(--naranja-oscuro); margin-bottom: 10px; font-size: 13px;">
+            <span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span>
+        </div>
+        <div id="calendario-dias" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; text-align: center;"></div>
+    </div>
+</section>
+
         <section id="ubicacion" class="seccion ubicacion">
             <div class="contenedor">
                 <div class="titulo-seccion">
@@ -323,7 +337,7 @@
             </div>
         </section>
 
-        <!-- CONTACTO -->
+        
         <section id="contacto" class="seccion contacto">
             <div class="contacto-contenido">
                 <div class="titulo-seccion">
@@ -334,7 +348,7 @@
                     </p>
                 </div>
 
-                <form class="formulario" action="#contacto" method="get">
+             <form class="formulario" action="php/procesar_contacto.php" method="POST">
                     <div class="campo">
                         <label for="nombre">Nombre completo</label>
                         <input
@@ -380,7 +394,6 @@
 
     </main>
 
-    <!-- PIE DE PÁGINA -->
     <footer class="footer">
         <div class="footer-contenido">
 
@@ -416,6 +429,8 @@
             <a href="#inicio">Volver arriba ↑</a>
         </div>
     </footer>
-
+<script src="js/validation.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/auth-guard.js"></script>
 </body>
 </html>
